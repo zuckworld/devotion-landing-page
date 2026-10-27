@@ -2349,3 +2349,740 @@ em {
         min-height: 680px;
     }
 }
+
+/* ---- Markup compatibility, part 2: sections below the hero ---- */
+
+/* Trust strip */
+.trust {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.trust-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 1.25rem;
+    display: grid;
+    gap: .9rem;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.trust-item svg {
+    width: 20px;
+    height: 20px;
+    flex: none;
+    color: var(--primary);
+}
+
+@media (min-width: 768px) {
+    .trust-inner {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.5rem 2.5rem;
+    }
+}
+
+/* Section rhythm */
+.features,
+.reader-showcase,
+.devotional-section,
+.audio-section,
+.streak-section,
+.testimonials {
+    padding: 4.5rem 1.25rem;
+}
+
+.features,
+.testimonials,
+.streak-section {
+    background: var(--background);
+}
+
+.reader-showcase,
+.audio-section {
+    background: var(--surface);
+}
+
+.features > *,
+.testimonials > *,
+.reader-showcase > *,
+.audio-section > *,
+.streak-section > *,
+.devotional-section > * {
+    max-width: var(--max);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features .section-header,
+.testimonials .section-header,
+.streak-container {
+    text-align: center;
+    max-width: 44rem;
+}
+
+.features .section-header .eyebrow,
+.testimonials .section-header .eyebrow,
+.streak-container .eyebrow {
+    justify-content: center;
+}
+
+.features .section-title,
+.testimonials .section-title,
+.streak-container .section-title {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.features .section-sub,
+.streak-container .section-sub {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 36rem;
+}
+
+.features .section-header {
+    margin-bottom: 2.75rem;
+}
+
+.testimonials .section-header {
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 900px) {
+    .features,
+    .reader-showcase,
+    .devotional-section,
+    .audio-section,
+    .streak-section,
+    .testimonials {
+        padding: 6rem 2.5rem;
+    }
+}
+
+/* Two-column split blocks: reader, devotional, audio */
+.reader-grid,
+.devotional-grid,
+.audio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.reader-text h2,
+.devotional-text h2,
+.audio-text h2 {
+    font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+}
+
+.reader-text p,
+.devotional-text p,
+.audio-text p {
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+@media (min-width: 900px) {
+    .reader-grid,
+    .devotional-grid,
+    .audio-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+}
+
+/* Reader */
+.reader-features {
+    list-style: none;
+    margin-top: 1.75rem;
+    display: grid;
+    gap: .7rem;
+}
+
+.reader-features li {
+    position: relative;
+    padding-left: 1.7rem;
+    color: var(--text);
+    font-size: .98rem;
+}
+
+.reader-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: .55rem;
+    width: .65rem;
+    height: .65rem;
+    border-radius: 50%;
+    background: var(--primary-soft);
+}
+
+.bible-mockup {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    padding: 1.75rem;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.bible-mockup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .9rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.1rem;
+}
+
+.bible-mockup-title {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.bible-version {
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    padding: .3rem .6rem;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.bible-mockup-content {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+.bible-mockup-content .highlight {
+    background: color-mix(in srgb, var(--primary-soft) 22%, transparent);
+    border-radius: 4px;
+    padding: 0 .15rem;
+    font-weight: 600;
+}
+
+.bible-mockup-ref {
+    margin-top: 1rem;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.theme-dots {
+    display: flex;
+    gap: .6rem;
+    margin-top: 1.25rem;
+    justify-content: center;
+}
+
+.theme-dots .theme-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    padding: 0;
+}
+
+.theme-dots .dot-paper { background: #FFFFFF; }
+.theme-dots .dot-sepia { background: #F4ECD8; }
+.theme-dots .dot-night { background: #0B1220; }
+
+.theme-dots .theme-dot.active {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-soft) 30%, transparent);
+}
+
+/* Devotionals: navy band */
+.devotional-section {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--band-text);
+}
+
+.devotional-section h2 {
+    color: #FFFFFF;
+}
+
+.devotional-text p {
+    color: var(--band-text);
+}
+
+.eyebrow.on-dark {
+    color: var(--band-text);
+}
+
+.devotional-calendar {
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-lg);
+    color: var(--text);
+    max-width: 30rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.1rem;
+}
+
+.calendar-header h4 {
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.calendar-header span {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.calendar-day-label {
+    text-align: center;
+    font-size: .72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    padding-bottom: .3rem;
+}
+
+.calendar-day {
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-size: .82rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: var(--surface);
+}
+
+.calendar-day.read {
+    background: var(--accent);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.calendar-day.active {
+    background: var(--primary);
+    color: var(--on-primary);
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+}
+
+.devotional-text .btn-primary {
+    margin-top: 1.75rem;
+    background: #FFFFFF;
+    color: var(--primary);
+}
+
+.devotional-text .btn-primary:hover {
+    background: var(--accent);
+}
+
+/* Audio */
+.speed-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+
+.speed-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: .45rem .9rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--text-muted);
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.speed-badge.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--on-primary);
+}
+
+.audio-player-mockup {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    padding: 1.75rem;
+    max-width: 26rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.audio-cover {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 22px;
+    background: linear-gradient(150deg, var(--primary) 0%, var(--primary-soft) 100%);
+    box-shadow: var(--shadow-md);
+}
+
+.audio-title {
+    margin-top: 1.25rem;
+}
+
+.audio-title h4 {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.audio-title p {
+    font-size: .85rem;
+    color: var(--text-muted);
+    margin-top: .25rem;
+}
+
+.audio-wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 46px;
+    margin: 1.25rem 0 .75rem;
+}
+
+.wave-bar {
+    width: 5px;
+    height: 100%;
+    border-radius: 3px;
+    background: var(--primary-soft);
+    opacity: .55;
+}
+
+.wave-bar:nth-child(odd) { height: 60%; }
+.wave-bar:nth-child(even) { height: 100%; }
+.wave-bar:nth-child(3) { height: 35%; }
+.wave-bar:nth-child(5) { height: 80%; }
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .9rem;
+}
+
+.control-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--text);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: .95rem;
+}
+
+.control-btn.play {
+    width: 56px;
+    height: 56px;
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--on-primary);
+    font-size: 1.1rem;
+}
+
+.audio-times {
+    display: flex;
+    justify-content: space-between;
+    font-size: .78rem;
+    color: var(--text-muted);
+    margin-top: 1.1rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Streak */
+.streak-ring {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 2.5rem auto 1.25rem;
+}
+
+.streak-ring svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.streak-ring-bg {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 14;
+}
+
+.streak-ring-progress {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    stroke-dasharray: 565.49;
+    stroke-dashoffset: 565.49;
+    transition: stroke-dashoffset 1.6s var(--ease);
+}
+
+.streak-ring-progress.animate {
+    stroke-dashoffset: 339.3;
+}
+
+.streak-number {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary);
+}
+
+.streak-number small {
+    font-family: var(--font-body);
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-top: .4rem;
+}
+
+.streak-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* Testimonials */
+.testimonial-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 800px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.testimonial-card {
+    margin: 0;
+    padding: 2.25rem;
+    border-radius: var(--radius);
+    background: var(--light);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.testimonial-text {
+    margin: 0;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--text);
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    margin-top: auto;
+}
+
+.author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--on-primary);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    flex: none;
+}
+
+.author-info h5 {
+    font-family: var(--font-body);
+    font-size: .95rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.author-info span {
+    font-size: .82rem;
+    color: var(--text-muted);
+}
+
+/* CTA */
+.cta-section {
+    background: linear-gradient(160deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--band-text);
+    text-align: center;
+    padding: 5rem 1.25rem;
+}
+
+.cta-content {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.cta-section h2 {
+    color: #FFFFFF;
+    font-size: clamp(2rem, 4.2vw, 3rem);
+}
+
+.cta-section .lead {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--band-text);
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.play-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .9rem;
+    padding: .8rem 1.6rem .8rem 1.2rem;
+    border-radius: 14px;
+    background: #FFFFFF;
+    color: var(--primary);
+    text-decoration: none;
+    box-shadow: var(--shadow-lg);
+    transition: transform .25s var(--ease);
+}
+
+.play-badge:hover {
+    transform: translateY(-3px);
+}
+
+.play-icon {
+    width: 32px;
+    height: 32px;
+    flex: none;
+    color: var(--primary);
+}
+
+.play-badge > div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.15;
+}
+
+.play-badge .small {
+    font-size: .72rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.play-badge .big {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.cta-verse {
+    margin-top: 2.25rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--band-text);
+    opacity: .85;
+}
+
+/* Footer */
+footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 2.5rem 1.25rem;
+    color: var(--text-muted);
+    font-size: .92rem;
+}
+
+.footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-inner p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+@media (min-width: 800px) {
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
