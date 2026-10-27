@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart to Heart — Bible & Devotional</title>
+    <meta name="description" content="Heart to Heart: a complete Bible, daily devotionals, hymns, and guided prayer in one calm, distraction-free app for Android.">
+    <title>Heart to Heart | Bible & Devotional</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">    
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <nav id="navbar">
-        <a href="#" class="logo">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path
-                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                </path>
+        <a href="#" class="logo" aria-label="Heart to Heart home">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
             </svg>
             Heart to Heart
         </a>
@@ -35,110 +34,184 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-bg"></div>
         <div class="hero-content">
-            <div class="hero-text">
-                <div class="verse-tag">"Thy word is a lamp unto my feet" — Psalm 119:105</div>
+            <div class="hero-text reveal active">
+                <div class="verse-tag">"Thy word is a lamp unto my feet" · Psalm 119:105</div>
                 <h1>Draw near to God,<br>one <em>heartbeat</em> at a time.</h1>
-                <p class="hero-sub">A complete Bible, daily devotionals, hymns, and guided prayer — all in one gentle,
+                <p class="hero-sub">A complete Bible, daily devotionals, hymns, and guided prayer, all in one gentle,
                     distraction-free space. Built for the moments between the noise.</p>
                 <div class="hero-buttons">
                     <a href="#download" class="btn-primary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" aria-hidden="true">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <polyline points="7 10 12 15 17 10"></polyline>
                             <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
                         Download Free
                     </a>
-                    <a href="#features" class="btn-secondary">Explore Features</a>
+                    <a href="#features" class="btn-secondary">Explore features</a>
+                </div>
+                <div class="hero-meta">
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Free to use
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        No subscription to read or pray
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Works offline
+                    </span>
                 </div>
             </div>
 
-            <div class="phone-showcase">
-                <!-- Samsung Galaxy S24 Ultra Frame -->
-                <div class="samsung-frame">
-                    <div class="punch-hole"></div>
-                    <div class="samsung-screen">
-                        <div class="screenshot-placeholder">
-                            <div class="placeholder-icon">
-                                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                    <path d="M21 15l-5-5L5 21"></path>
-                                </svg>
+            <div class="phone-showcase reveal active">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="punch-hole"></div>
+                        <div class="app-top">
+                            <div class="app-greet">
+                                <small>Good morning</small>
+                                <strong>Your reading</strong>
                             </div>
-                            <div class="placeholder-text">
-                                Replace this div with your<br>actual app screenshot.<br>
-                                <span style="font-size:0.7rem; margin-top:0.5rem; display:block;">Recommended: 1080×2400
-                                    PNG</span>
+                            <div class="app-avatar">H</div>
+                        </div>
+                        <div class="app-verse">
+                            <div class="kicker">Today's verse</div>
+                            <p>The Lord is my shepherd; I shall not want.</p>
+                            <div class="ref">Psalm 23:1 · KJV</div>
+                        </div>
+                        <div class="app-section-title">Continue</div>
+                        <div class="app-list">
+                            <div class="app-row">
+                                <div class="app-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"></path></svg>
+                                </div>
+                                <div>Psalm 23<span class="sub">Bible · KJV</span></div>
                             </div>
+                            <div class="app-row">
+                                <div class="app-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg>
+                                </div>
+                                <div>Prayer journal<span class="sub">Private entry</span></div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <div>Morning devotional<span class="sub">4 min read</span></div>
+                            </div>
+                        </div>
+                        <div class="app-streak">
+                            <div>
+                                <strong>12 days</strong><br>
+                                <span>in the Word</span>
+                            </div>
+                            <div class="app-dots"><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="float-card card-1">
-                    <div class="float-icon" style="background: rgba(122,148,120,0.15);">📖</div>
+                    <div class="float-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"></path></svg>
+                    </div>
                     <span>KJV + Translations</span>
                 </div>
                 <div class="float-card card-2">
-                    <div class="float-icon" style="background: rgba(107,45,60,0.1);">🙏</div>
+                    <div class="float-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg>
+                    </div>
                     <span>Prayer Journal</span>
                 </div>
                 <div class="float-card card-3">
-                    <div class="float-icon" style="background: rgba(201,169,110,0.15);">🔥</div>
+                    <div class="float-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+                    </div>
                     <span>12 Day Streak</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Trust strip -->
+    <div class="trust">
+        <div class="trust-inner">
+            <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"></path></svg>
+                Offline KJV bundled with the app
+            </div>
+            <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3z"></path><path d="M3 19a2 2 0 0 0 2 2h1v-6H3z"></path></svg>
+                Listen to Scripture and devotionals
+            </div>
+            <div class="trust-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                A prayer journal that stays private
+            </div>
+        </div>
+    </div>
+
     <!-- Features -->
     <section class="features" id="features">
         <div class="section-header reveal">
-            <div class="section-label">Everything you need</div>
-            <h2 class="section-title">A quiet place for<br>daily Scripture</h2>
+            <div class="eyebrow">Everything you need</div>
+            <h2 class="section-title">A quiet place for daily Scripture</h2>
             <p class="section-sub">Six core experiences, designed to work together without overwhelming you.</p>
         </div>
 
         <div class="features-grid">
-            <div class="feature-card reveal">
-                <div class="feature-icon" style="background: rgba(107,45,60,0.08); color: var(--wine);">📖</div>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"></path></svg>
+                </div>
                 <h3>Complete Bible</h3>
                 <p>Offline KJV bundled with the app. Switch translations when connected. Paper, sepia, and night reading
                     themes with adjustable font sizes.</p>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-icon" style="background: rgba(122,148,120,0.12); color: var(--sage);">✨</div>
+            </article>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path><circle cx="12" cy="12" r="3.5"></circle></svg>
+                </div>
                 <h3>Daily Devotionals</h3>
                 <p>Fresh devotionals every day with scripture, confession, and prayer. Read or listen offline. Search by
                     title, verse, or theme.</p>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-icon" style="background: rgba(201,169,110,0.12); color: var(--gold);">🎵</div>
+            </article>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                </div>
                 <h3>Hymn Library</h3>
                 <p>Browse public-domain hymns with lyrics, composer stories, and background. Search by title, lyrics, or
                     author.</p>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-icon" style="background: rgba(107,45,60,0.08); color: var(--wine);">🔍</div>
+            </article>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
                 <h3>Unified Search</h3>
                 <p>One search for Bible verses, devotionals, hymns, notes, and audio history. Results that open exactly
                     where you need to go.</p>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-icon" style="background: rgba(122,148,120,0.12); color: var(--sage);">🎧</div>
+            </article>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3z"></path><path d="M3 19a2 2 0 0 0 2 2h1v-6H3z"></path></svg>
+                </div>
                 <h3>Listen Anywhere</h3>
                 <p>Device-native text-to-speech for Bible and devotionals. Playback speed controls, mini-player, and
                     downloadable audio.</p>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-icon" style="background: rgba(201,169,110,0.12); color: var(--gold);">📝</div>
-                <h3>Notes & Prayer</h3>
+            </article>
+            <article class="feature-card reveal">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20h9"></path><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg>
+                </div>
+                <h3>Notes &amp; Prayer</h3>
                 <p>Verse highlights, bookmarks, Bible notes with backend sync, and a personal prayer journal that stays
                     private.</p>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -146,12 +219,12 @@
     <section class="reader-showcase" id="bible">
         <div class="reader-grid">
             <div class="reader-text reveal">
-                <div class="section-label" style="color: var(--wine);">Immersive Reading</div>
-                <h2>Read the Word<br>the way that suits<br>your eyes.</h2>
+                <div class="eyebrow">Immersive Reading</div>
+                <h2>Read the Word the way that suits your eyes.</h2>
                 <p>Three carefully tuned themes, smooth verse-by-verse layout, and reading history that remembers
                     exactly where you left off.</p>
                 <ul class="reader-features">
-                    <li>Offline KJV — no connection required</li>
+                    <li>Offline KJV, no connection required</li>
                     <li>Bookmarks, highlights, and personal notes</li>
                     <li>Text-to-speech with natural voice</li>
                     <li>Continue reading from your Home screen</li>
@@ -162,17 +235,17 @@
                 <div class="bible-mockup">
                     <div class="bible-mockup-header">
                         <span class="bible-mockup-title">Psalm 23</span>
-                        <span style="font-size:0.75rem; color:var(--charcoal-soft);">KJV</span>
+                        <span class="bible-version">KJV</span>
                     </div>
                     <div class="bible-mockup-content">
                         The <span class="highlight">LORD</span> is my shepherd; I shall not want. He maketh me to lie
                         down in green pastures: he leadeth me beside the still waters. He restoreth my soul...
                     </div>
-                    <div class="bible-mockup-ref">Psalm 23:1–3</div>
+                    <div class="bible-mockup-ref">Psalm 23:1-3</div>
                     <div class="theme-dots">
-                        <div class="theme-dot dot-paper active" title="Paper"></div>
-                        <div class="theme-dot dot-sepia" title="Sepia"></div>
-                        <div class="theme-dot dot-night" title="Night"></div>
+                        <button class="theme-dot dot-paper active" title="Paper" aria-label="Paper theme"></button>
+                        <button class="theme-dot dot-sepia" title="Sepia" aria-label="Sepia theme"></button>
+                        <button class="theme-dot dot-night" title="Night" aria-label="Night theme"></button>
                     </div>
                 </div>
             </div>
@@ -185,7 +258,7 @@
             <div class="devotional-calendar reveal">
                 <div class="calendar-header">
                     <h4>August 2026</h4>
-                    <span style="opacity:0.6; font-size:0.85rem;">Today</span>
+                    <span>Today</span>
                 </div>
                 <div class="calendar-grid">
                     <div class="calendar-day-label">S</div>
@@ -235,11 +308,11 @@
                 </div>
             </div>
             <div class="devotional-text reveal">
-                <div class="section-label" style="color: var(--gold);">Daily Bread</div>
-                <h2>A devotional for<br>every morning.</h2>
+                <div class="eyebrow on-dark">Daily Bread</div>
+                <h2>A devotional for every morning.</h2>
                 <p>Each day brings a new reading with scripture reference, confession, and guided prayer. Browse by
                     month, save favorites, and build a library of encouragement you can return to offline.</p>
-                <a href="#download" class="btn-primary" style="margin-top: 1rem;">Start Today's Reading</a>
+                <a href="#download" class="btn-primary">Start Today's Reading</a>
             </div>
         </div>
     </section>
@@ -248,27 +321,24 @@
     <section class="audio-section" id="audio">
         <div class="audio-grid">
             <div class="audio-text reveal">
-                <div class="section-label" style="color: var(--wine);">Listen & Absorb</div>
-                <h2>Let the Word<br>speak to you.</h2>
-                <p>Not just reading — listening. Native text-to-speech for Bible passages and devotionals, with speed
+                <div class="eyebrow">Listen &amp; Absorb</div>
+                <h2>Let the Word speak to you.</h2>
+                <p>Not just reading, but listening. Native text-to-speech for Bible passages and devotionals, with speed
                     controls from 0.75× to 2×. A mini-player stays with you as you navigate the app.</p>
-                <div style="margin-top: 2rem;">
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <span class="speed-badge">0.75×</span>
-                        <span class="speed-badge" style="background: var(--wine); color: white;">1×</span>
-                        <span class="speed-badge">1.25×</span>
-                        <span class="speed-badge">1.5×</span>
-                        <span class="speed-badge">2×</span>
-                    </div>
+                <div class="speed-row">
+                    <span class="speed-badge">0.75×</span>
+                    <span class="speed-badge active">1×</span>
+                    <span class="speed-badge">1.25×</span>
+                    <span class="speed-badge">1.5×</span>
+                    <span class="speed-badge">2×</span>
                 </div>
             </div>
             <div class="audio-visual reveal">
                 <div class="audio-player-mockup">
                     <div class="audio-cover"></div>
-                    <div style="text-align: center;">
-                        <h4 style="font-family: 'Playfair Display', serif; margin-bottom: 0.25rem;">Morning Devotional
-                        </h4>
-                        <p style="font-size: 0.8rem; color: var(--charcoal-soft);">August 20 • 4 min read</p>
+                    <div class="audio-title">
+                        <h4>Morning Devotional</h4>
+                        <p>August 20 · 4 min read</p>
                     </div>
                     <div class="audio-wave">
                         <div class="wave-bar"></div>
@@ -280,14 +350,13 @@
                         <div class="wave-bar"></div>
                     </div>
                     <div class="audio-controls">
-                        <button class="control-btn">⏮</button>
-                        <button class="control-btn">⏪</button>
-                        <button class="control-btn play">▶</button>
-                        <button class="control-btn">⏩</button>
-                        <button class="control-btn">⏭</button>
+                        <button class="control-btn" aria-label="Previous">⏮</button>
+                        <button class="control-btn" aria-label="Back 15 seconds">⏪</button>
+                        <button class="control-btn play" aria-label="Play">▶</button>
+                        <button class="control-btn" aria-label="Forward 15 seconds">⏩</button>
+                        <button class="control-btn" aria-label="Next">⏭</button>
                     </div>
-                    <div
-                        style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.75rem; color: var(--charcoal-soft);">
+                    <div class="audio-times">
                         <span>1:24</span>
                         <span>4:12</span>
                     </div>
@@ -299,23 +368,17 @@
     <!-- Streak -->
     <section class="streak-section">
         <div class="streak-container reveal">
-            <div class="section-label" style="color: var(--gold);">Build the Habit</div>
-            <h2 class="section-title">Your journey,<br>visible.</h2>
+            <div class="eyebrow">Build the Habit</div>
+            <h2 class="section-title">Your journey, visible.</h2>
             <p class="section-sub">Reading history, streak counters, and activity rails that quietly celebrate
                 consistency without pressure.</p>
 
             <div class="streak-ring">
-                <svg width="200" height="200" viewBox="0 0 200 200">
-                    <defs>
-                        <linearGradient id="streakGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:var(--gold)" />
-                            <stop offset="100%" style="stop-color:var(--wine)" />
-                        </linearGradient>
-                    </defs>
+                <svg viewBox="0 0 200 200" aria-hidden="true">
                     <circle class="streak-ring-bg" cx="100" cy="100" r="90"></circle>
                     <circle class="streak-ring-progress" cx="100" cy="100" r="90"></circle>
                 </svg>
-                <div class="streak-number">12</div>
+                <div class="streak-number">12<small>days</small></div>
             </div>
             <div class="streak-label">Days in the Word</div>
         </div>
@@ -324,94 +387,111 @@
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="section-header reveal">
-            <div class="section-label">Community</div>
+            <div class="eyebrow">Community</div>
             <h2 class="section-title">What believers are saying</h2>
         </div>
         <div class="testimonial-grid">
-            <div class="testimonial-card reveal">
-                <p class="testimonial-text">This app has become the first thing I open in the morning. The daily
+            <figure class="testimonial-card reveal">
+                <blockquote class="testimonial-text">This app has become the first thing I open in the morning. The daily
                     devotional is concise but deep, and being able to listen while I get ready has changed my routine
-                    entirely.</p>
-                <div class="testimonial-author">
+                    entirely.</blockquote>
+                <figcaption class="testimonial-author">
                     <div class="author-avatar">S</div>
                     <div class="author-info">
                         <h5>Sarah M.</h5>
                         <span>12-day streak</span>
                     </div>
-                </div>
-            </div>
-            <div class="testimonial-card reveal">
-                <p class="testimonial-text">Finally a Bible app that doesn't feel cluttered. The offline KJV is fast,
-                    the search actually works across everything, and the prayer journal is beautifully simple.</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar" style="background: linear-gradient(135deg, var(--sage), var(--gold));">D
-                    </div>
+                </figcaption>
+            </figure>
+            <figure class="testimonial-card reveal">
+                <blockquote class="testimonial-text">Finally a Bible app that doesn't feel cluttered. The offline KJV is fast,
+                    the search actually works across everything, and the prayer journal is beautifully simple.</blockquote>
+                <figcaption class="testimonial-author">
+                    <div class="author-avatar">D</div>
                     <div class="author-info">
                         <h5>David K.</h5>
                         <span>Using for 3 months</span>
                     </div>
-                </div>
-            </div>
+                </figcaption>
+            </figure>
         </div>
     </section>
 
     <!-- CTA -->
     <section class="cta-section" id="download">
         <div class="cta-content">
-            <h2>Begin your journey<br>today.</h2>
-            <p>Heart to Heart is free to use. No subscription required to read, listen, pray, and grow.</p>
-            <a href="#" class="play-badge">
-                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                <div style="text-align: left;">
-                    <div style="font-size: 0.7rem; opacity: 0.7;">GET IT ON</div>
-                    <div style="font-size: 1.1rem; font-weight: 700;">Google Play</div>
-                </div>
-            </a>
-            <p style="margin-top: 2rem; font-size: 0.85rem; opacity: 0.6;">"But his delight is in the law of the LORD" —
-                Psalm 1:2</p>
+            <h2>Begin your journey today.</h2>
+            <p class="lead">Heart to Heart is free to use. No subscription required to read, listen, pray, and grow.</p>
+            <div class="cta-buttons">
+                <a href="#" class="play-badge">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                    </svg>
+                    <div>
+                        <span class="small">Get it on</span>
+                        <span class="big">Google Play</span>
+                    </div>
+                </a>
+            </div>
+            <p class="cta-verse">"But his delight is in the law of the LORD" · Psalm 1:2</p>
         </div>
     </section>
 
     <footer>
-        <p>Heart to Heart Bible & Devotional App. Built with care for Android.</p>
-        <p style="margin-top: 0.5rem;"><a href="#">Privacy</a> &nbsp;•&nbsp; <a href="#">Terms</a> &nbsp;•&nbsp; <a
-                href="#">Support</a></p>
+        <div class="footer-inner">
+            <p>Heart to Heart Bible &amp; Devotional App. Built with care for Android.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script>
-        // Navbar scroll effect
+        // Navbar state on scroll
         const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 40);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
 
         // Scroll reveal
-        const reveals = document.querySelectorAll('.reveal');
-        const revealOnScroll = () => {
-            reveals.forEach(el => {
-                const windowHeight = window.innerHeight;
-                const elementTop = el.getBoundingClientRect().top;
-                const revealPoint = 100;
-                if (elementTop < windowHeight - revealPoint) {
-                    el.classList.add('active');
+        const reveals = document.querySelectorAll('.reveal:not(.active)');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((e) => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('active');
+                    io.unobserve(e.target);
                 }
             });
-        };
-        window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll();
+        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+        reveals.forEach((el) => io.observe(el));
 
-        // Theme dot interaction
-        document.querySelectorAll('.theme-dot').forEach(dot => {
-            dot.addEventListener('click', function () {
-                document.querySelectorAll('.theme-dot').forEach(d => d.classList.remove('active'));
-                this.classList.add('active');
+        // Streak ring animates in once visible
+        const ring = document.querySelector('.streak-ring-progress');
+        const ringIO = new IntersectionObserver((entries) => {
+            entries.forEach((e) => {
+                if (e.isIntersecting) {
+                    ring.classList.add('animate');
+                    ringIO.disconnect();
+                }
+            });
+        }, { threshold: 0.4 });
+        ringIO.observe(ring);
+
+        // Theme dot selection
+        document.querySelectorAll('.theme-dot').forEach((dot) => {
+            dot.addEventListener('click', () => {
+                document.querySelectorAll('.theme-dot').forEach((d) => d.classList.remove('active'));
+                dot.classList.add('active');
+            });
+        });
+
+        // Speed badge selection
+        document.querySelectorAll('.speed-badge').forEach((b) => {
+            b.addEventListener('click', () => {
+                document.querySelectorAll('.speed-badge').forEach((x) => x.classList.remove('active'));
+                b.classList.add('active');
             });
         });
     </script>
